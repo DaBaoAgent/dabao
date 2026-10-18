@@ -29,6 +29,7 @@ D:\@kaifa\dabao\
 │  ├─ 03-发布SOP.md              单条片子从扫描到归档的完整步骤
 │  ├─ 04-运营班表与cron.md        6 条 cron 的 id/时间/职责/改法
 │  └─ 05-故障排查.md              高频坑位与判据（MCP parked、429、代理、token）
+│  └─ 06-MCP授权与恢复记录.md      OAuth 重授权步骤/坑位/本次恢复结果
 ├─ mcp\upload-post\              MCP server 资产：定义/注册/健康检查
 │  ├─ server.json                 server 定义（url + oauth），注册真相源
 │  ├─ register.ps1                幂等注册到 Hermes（config.yaml mcp 段）
@@ -44,6 +45,8 @@ D:\@kaifa\dabao\
 ---
 
 ## 3. 快速开始
+
+> `hermes` 不在 PowerShell PATH 里 → 用全路径 `C:\Users\20200\AppData\Local\hermes\hermes-agent\venv\Scripts\hermes.exe`（详见 docs/06）。
 
 ```bash
 # ① 体检（只读，不发帖）

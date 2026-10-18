@@ -14,11 +14,14 @@
 ## 生命周期
 
 ```bash
+# ⚠️ hermes 不在用户 PATH：一律用全路径（或在 git-bash 里跑）
+HERMES="C:/Users/20200/AppData/Local/hermes/hermes-agent/venv/Scripts/hermes.exe"
+
 # 注册（幂等，从 server.json 读 url）
 powershell -NoProfile -ExecutionPolicy Bypass -File D:/@kaifa/dabao/mcp/upload-post/register.ps1
 
-# 授权（仅人工，cron 内必失败）
-hermes mcp login upload-post
+# 授权（仅人工，必须 pty 前台；cron 内必失败且会先删 token）
+"$HERMES" mcp login upload-post --flow browser    # 成功标志：✓ Authenticated — 73 tool(s) available
 
 # 健康检查（只读）
 python D:/@kaifa/dabao/mcp/upload-post/health.py
