@@ -1,0 +1,3 @@
+<!-- job_id: 51af456349b4 | schedule: {'kind': 'cron', 'expr': '30 1 * * 1', 'display': '30 1 * * 1'} | enabled: True -->
+
+执行dabao爆款文案库每周更新（v2：加入X引流文案学习）。⚠️注意：web_search(Tavily未注册)与x_search(xAI无额度)已失效，搜索一律用本机通道：①Exa搜索 `cd /d/@kaifa/Agent-Reach && mcporter call 'exa.web_search_exa(query: "…", numResults: 20)'` ②B站/抖音/小红书实测API或网页。调研对象分两类：①监狱·历史·纪录片解说类高赞账号（TikTok/YouTube/IG/B站）最新爆款标题/文案/标签（60 Days In A&E官方、Free Documentary、监狱题材中文解说UP）②X上推荐开源项目/AI工具/效率神器的高互动帖文案结构（如做 AI agent、自动化工具、side project 引流的账号）——学习其开头钩子/故事/结果展示/CTA 的写法。抓10-30条真实样本标注平台/出处URL/互动量。总结新模式与标签组合，与D:\@kaifa\dabao文案库\爆款文案库.md已有内容对比，只把新模式追加入库标注发现日期+出处链接，勿重复。新学到的X引流类文案结构追加到「六、X引流文案模板池」（含新样本出处）。对照D:\自动剪辑\纪录片解说待发第一个未发目录给出3条优化建议。输出中文简报：本轮新增模式数+模板池总数+下一条待发片名+3条建议。

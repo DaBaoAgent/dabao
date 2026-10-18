@@ -1,0 +1,17 @@
+# 运行时与凭证，永不入库
+state/
+skill/
+__pycache__/
+*.pyc
+*.log
+*.mp4
+*.jpg
+*.png
+_probe/
+.venv/
+
+# 可能出现的临时/凭证副本
+mcp-tokens/
+*.token
+*.env
+.env

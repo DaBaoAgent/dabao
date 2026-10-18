@@ -1,0 +1,98 @@
+[
+  {
+    "id": "222636e84bbd",
+    "name": "dabao-自动发布-05点",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 5 * * *",
+      "display": "every day at 5am"
+    },
+    "enabled": true,
+    "script": null,
+    "deliver": "local",
+    "no_agent": false,
+    "model": "deepseek-flash",
+    "provider": "deepseek",
+    "prompt_len": 3004
+  },
+  {
+    "id": "b1ac6266c95b",
+    "name": "dabao-自动发布-19点",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 19 * * *",
+      "display": "every day at 7pm"
+    },
+    "enabled": true,
+    "script": null,
+    "deliver": "local",
+    "no_agent": false,
+    "model": "deepseek-flash",
+    "provider": "deepseek",
+    "prompt_len": 3004
+  },
+  {
+    "id": "4c3c057a96db",
+    "name": "dabao-互动值班-每小时(7-23点)",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 7-23 * * *",
+      "display": "0 7-23 * * *"
+    },
+    "enabled": true,
+    "script": null,
+    "deliver": "local",
+    "no_agent": false,
+    "model": "deepseek-flash",
+    "provider": "deepseek",
+    "prompt_len": 1029
+  },
+  {
+    "id": "e40385ea577f",
+    "name": "dabao-每日数据日报-20点",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 20 * * *",
+      "display": "every day at 8pm"
+    },
+    "enabled": true,
+    "script": null,
+    "deliver": "local",
+    "no_agent": false,
+    "model": "deepseek-flash",
+    "provider": "deepseek",
+    "prompt_len": 458
+  },
+  {
+    "id": "51af456349b4",
+    "name": "dabao-爆款文案库每周学习",
+    "schedule": {
+      "kind": "cron",
+      "expr": "30 1 * * 1",
+      "display": "30 1 * * 1"
+    },
+    "enabled": true,
+    "script": null,
+    "deliver": "local",
+    "no_agent": false,
+    "model": "deepseek-flash",
+    "provider": "deepseek",
+    "prompt_len": 604
+  },
+  {
+    "id": "da63e3511e89",
+    "name": "dabao-发布失败自动补发-30分钟",
+    "schedule": {
+      "kind": "interval",
+      "minutes": 30,
+      "display": "every 30m"
+    },
+    "enabled": true,
+    "script": "dabao_publish_retry.py",
+    "deliver": "qqbot:6EC3D3D5E66B0502D107E0E3A93A71D9",
+    "no_agent": true,
+    "model": null,
+    "provider": null,
+    "prompt_len": 190
+  }
+]

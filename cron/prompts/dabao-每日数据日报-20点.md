@@ -1,0 +1,3 @@
+<!-- job_id: e40385ea577f | schedule: {'kind': 'cron', 'expr': '0 20 * * *', 'display': 'every day at 8pm'} | enabled: True -->
+
+生成xiangge六平台每日数据日报。1)用get_total_impressions(period=last_day)和get_analytics(profileUsername=xiangge)拉各平台(TikTok/YouTube/Instagram/Facebook/X)昨日全天+今日至今的播放/点赞/评论/订阅(粉丝)数据，YouTube订阅量用get_analytics；2)生成HTML看板(数据表格+平台卡片+涨跌标注，存D:\@kaifa\dabao日报\日报-YYYY-MM-DD.html)；3)用send-email技能(QQ SMTP)把HTML看板作为邮件正文发到120112121@qq.com；4)输出<2000字符中文简报(各平台核心数字+暴涨标注)，这条简报会经QQ bot转发给老板(QQ 1361098634)；5)爆量监测：单日播放>1000或总播放进历史前3的帖子重点标注；发布满24h和72h的帖子重点核查；6)数据拉不到的平台如实标注"数据暂不可用"，严禁编造数字。

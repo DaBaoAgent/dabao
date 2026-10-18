@@ -1,0 +1,22 @@
+{
+  "name": "upload-post",
+  "url": "https://mcp.upload-post.com/mcp",
+  "auth": "oauth",
+  "connect_timeout": 120,
+  "enabled": true,
+  "profile": "xiangge",
+  "plan": "Basic $24/mo · 5 profiles",
+  "python_client": "C:/Users/20200/AppData/Local/hermes/scripts/uploadpost_mcp.py",
+  "token_files": [
+    "C:/Users/20200/AppData/Local/hermes/mcp-tokens/upload-post.json",
+    "C:/Users/20200/AppData/Local/hermes/mcp-tokens/upload-post.client.json",
+    "C:/Users/20200/AppData/Local/hermes/mcp-tokens/upload-post.meta.json"
+  ],
+  "ig_token_cache": "C:/Users/20200/AppData/Local/hermes/cache/dabao_duty/conv.json",
+  "hermes_config_key": "mcp.servers.upload-post",
+  "notes": [
+    "注册真相源仍是 HERMES_HOME/config.yaml；本文件用于声明与重建。",
+    "OAuth 授权只能交互式完成：hermes mcp login upload-post（cron 内跑必超时且会先删 token）。",
+    "凭证永不入库；token 过期时先跑 health.py 判断是瞬态 400 还是 invalid_grant。"
+  ]
+}
