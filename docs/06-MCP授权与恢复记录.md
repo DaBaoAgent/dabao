@@ -41,6 +41,11 @@ powershell -NoProfile -Command "Get-CimInstance Win32_Process | Where-Object {\$
 
 ### 待办（恢复运营）
 
-1. 补发：积压 15 条（下一条 `44 美索不达米亚：被遗忘的文明`，物料齐备：压缩版 142MB / 2分钟版 / TG版 / X裁剪 / 3:4+4:3 封面 / 文案）；
-2. 节奏建议：先手动触发一次 05 点班补 1 条验证端到端，之后按 2 条/天自动跑；
-3. 观察 24h 数据：日报 20:00 班应恢复四平台数字。
+- [x] **补发第 1 条已完成（2026-10-18 23:37–23:52）**：`44 美索不达米亚：被遗忘的文明` 发到 FB / IG / TG / X 四平台，全部 `success` 且字节数精确相等，目录已归档到 `@已发\【已发】44 …`。
+  - IG https://www.instagram.com/reel/DepBebck0uB/
+  - FB https://www.facebook.com/1368682286321514/videos/1084028797775761
+  - TG https://t.me/Dabaoagent/86
+  - X https://x.com/AlanandLvy/status/2111844842338673017
+  - ⚠️ 本班踩坑：`_pub_one_0924.py` 的 PUT 线路轮换原先把 http 代理排第一 → 142MB 被限速 ~99KB/s、600s 超时；**已改为 `--noproxy '*'` 直连优先**（4.18MB/s / 34s）。
+- [ ] 观察 24h 数据：日报 20:00 班应恢复四平台数字；
+- [ ] 素材库剩余 14 条（约 7 天），按 2 条/天自动跑。

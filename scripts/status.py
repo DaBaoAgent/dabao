@@ -87,7 +87,8 @@ def pending_dirs():
         if mp4s:
             out.append({"dir": name, "file": os.path.basename(mp4s[0]),
                         "mb": round(os.path.getsize(mp4s[0]) / 1048576, 1)})
-    out.sort(key=lambda x: x["dir"])
+    # 排序口径必须与发布班一致（ls/locale 序 ≈ GBK 字节序；Python 默认 Unicode 序会选错片）
+    out.sort(key=lambda x: x["dir"].encode("gbk", errors="ignore"))
     return out
 
 
