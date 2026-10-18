@@ -90,6 +90,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File D:/@kaifa/dabao/mcp/upload-p
 | 每小时 07–23 点 | `4c3c057a96db` | 评论/私信互动值班（IG 为主，AutoDM 绑新帖） |
 | 每天 20:00 | `e40385ea577f` | 六平台数据日报 → HTML 邮件 + QQ 简讯 |
 | 每周一 01:30 | `51af456349b4` | 爆款文案库学习/扩充 |
+| 按需（一次性） | 例 `93d27c9ddd14` | 晨检 `scripts/morning_check.py`：核对 05 点班是否真发出片，结果推 QQ |
 
 快照与 prompt 全文在 [`cron/`](cron/)；新增/改动 cron 后请重跑 `scripts/status.py --refresh-cron` 更新快照。
 
